@@ -1,0 +1,141 @@
+$color-primary: #2E7D32;
+$color-secondary: #FFEB3B;
+$cd-dot: #0E397F;
+$size: 1vh;
+$anim-dur: 1000ms;
+$anim-delay: $anim-dur / 5;
+@mixin btn-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    width: 20rem;
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: medium;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    display: block;
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 6rem;
+    text-align: center;
+    @font-face {
+        font-family: 'roboto_condensedbold_italic';
+        src: url('RobotoCondensed-BoldItalic-webfont.eot');
+        src: url('RobotoCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('RobotoCondensed-BoldItalic-webfont.woff2') format('woff2'),
+             url('RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
+             url('RobotoCondensed-BoldItalic-webfont.ttf') format('truetype'),
+             url('RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+}
+a{
+    text-decoration: none;
+}
+.haut, .bas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn_note{
+    @include btn-menu;
+    background-color: #FF4081;
+}
+.btn_chic{
+    @include btn-menu; 
+    background-color: #E040FB;
+}
+.btn_delice{
+    @include btn-menu;
+    background-color: #536DFE;
+}
+.btn_gout{
+    @include btn-menu;
+    background-color: #40C4FF;
+}
+.btn{
+    display: inline-block;
+    background-color: #4CAF50;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius:10rem;
+    -moz-border-radius:10rem;
+    -webkit-border-radius:10rem;
+    margin-left: 40%;
+    margin-right: 50%;
+    width: 20rem;
+    margin-bottom: 4rem;
+        &:active {
+            .load {
+                &__dot {
+                    animation: dot $anim-dur backwards infinite ease-in-out alternate;
+                    @for $i from 1 through 5 {
+                        &--#{$i} {
+                            animation-delay: $anim-delay * $i;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+.load {
+        width: $size*10;
+        height: $size*7.5;
+        display: flex;
+        justify-content: space-evenly;
+        &__dot {
+            background-color: $cd-dot;
+            height: 100%;
+            width: $size;
+            animation: dot $anim-dur;
+        }
+    }   
+@keyframes dot {
+        0% {
+            transform: scalex(0.5);
+        }
+        100% {
+            transform: scalex(1.0);
+        }
+    }
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    background-color: #4CAF50;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    text-decoration: none;
+ }
+.mention{
+    padding-left: 2rem;
+    text-decoration: none;
+    color: $color-secondary;
+}
+.contact{
+    padding-right: 2rem;
+    text-decoration: none;
+    color: $color-secondary;
+}
