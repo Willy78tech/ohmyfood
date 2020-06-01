@@ -5,7 +5,8 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 header {
@@ -49,6 +50,22 @@ a {
   margin-bottom: 2rem;
   font-size: medium;
   background-color: #FF4081;
+  position: relative;
+  z-index: 1;
+}
+.btn_note:hover::after {
+  opacity: 1;
+}
+.btn_note::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: 1;
+  z-index: -1;
+  transform: opacity 250ms;
 }
 
 .btn_chic {
@@ -94,7 +111,8 @@ a {
 }
 
 .btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   background-color: #4CAF50;
   color: #FFEB3B;
   font-size: 1.5rem;
@@ -131,7 +149,7 @@ a {
 
 .load {
   width: 10vh;
-  height: 7.5vh;
+  height: 1vh;
   display: flex;
   justify-content: space-evenly;
 }
@@ -154,22 +172,22 @@ footer {
   display: flex;
   justify-content: space-between;
   text-align: justify;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #4CAF50;
-  color: #FFEB3B;
   font-size: 1.5rem;
-  text-decoration: none;
+  font-weight: bold;
+  color: #FFEB3B;
 }
 
 .mention {
   padding-left: 2rem;
-  text-decoration: none;
-  color: #FFEB3B;
 }
 
 .contact {
   padding-right: 2rem;
-  text-decoration: none;
-  color: #FFEB3B;
 }
 
 /*# sourceMappingURL=style.css.map */
