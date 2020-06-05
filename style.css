@@ -9,49 +9,106 @@ html, body {
   position: relative;
 }
 
+.haut {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bas {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header {
   display: block;
-  background-color: #2E7D32;
+  background-color: #065f56;
   color: #FFEB3B;
   font-size: 4rem;
   font-weight: bold;
   height: 6rem;
   text-align: center;
-}
-@font-face {
-    font-family: "roboto_condensedbold_italic";
-    src: url("RobotoCondensed-BoldItalic-webfont.eot");
-    src: url("RobotoCondensed-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("RobotoCondensed-BoldItalic-webfont.woff2") format("woff2"), url("RobotoCondensed-BoldItalic-webfont.woff") format("woff"), url("RobotoCondensed-BoldItalic-webfont.ttf") format("truetype"), url("RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic") format("svg");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "roboto_condensedbold_italic";
+  src: url("RobotoCondensed-BoldItalic-webfont.eot");
+  src: url("RobotoCondensed-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("RobotoCondensed-BoldItalic-webfont.woff2") format("woff2"), url("RobotoCondensed-BoldItalic-webfont.woff") format("woff"), url("RobotoCondensed-BoldItalic-webfont.ttf") format("truetype"), url("RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-ul, li {
-  display: inline-block;
-  list-style: none;
-  width: 30%;
+.btn_note {
+  background-color: #FFCDD2;
+  margin-right: 10rem;
+  cursor: pointer;
   text-align: center;
+  width: 30rem;
+  line-height: 2rem;
+  vertical-align: middle;
 }
 
-ul li a {
-  display: block;
+.btn_note p a {
   text-decoration: none;
-  font-size: 2rem;
+}
+
+.btn_chic {
+  background-color: #FFEBEE;
+  width: 30rem;
+  margin-left: 10rem;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 2rem;
+}
+
+.btn_chic p a {
+  text-decoration: none;
+}
+
+.btn_delice {
+  background-color: #E3F2FD;
+  margin-right: 10rem;
+  cursor: pointer;
+  text-align: center;
+  width: 30rem;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+.btn_delice p a {
+  text-decoration: none;
+}
+
+.btn_gout {
+  background-color: #FAFAFA;
+  margin-right: 10rem;
+  cursor: pointer;
+  text-align: center;
+  width: 30rem;
+  line-height: 2rem;
+  vertical-align: middle;
+}
+
+.btn_gout p a {
+  text-decoration: none;
 }
 
 .btn {
   display: flex;
   justify-content: center;
-  background-color: #4CAF50;
+  background-color: #065f56;
   color: #FFEB3B;
   font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  -webkit-border-radius: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
   margin-left: 40%;
   margin-right: 50%;
   margin-top: 4rem;
@@ -60,7 +117,6 @@ ul li a {
 }
 .btn_loading {
   font-size: 2rem;
-  color: #424242;
   text-align: center;
 }
 
@@ -138,18 +194,38 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #4CAF50;
+  background-color: #065f56;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #FFEB3B;
 }
 
 .mention {
   padding-left: 2rem;
+  font-family: sans-serif;
+}
+.mention:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
 }
 
 .contact {
   padding-right: 2rem;
+  font-family: sans-serif;
+}
+.contact:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+
+.mention a, .contact a {
+  text-decoration: none;
+  color: #FFEB3B;
+}
+
+@keyframes headshake {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

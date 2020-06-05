@@ -1,4 +1,4 @@
-$color-primary: #2E7D32;
+$color-primary: #065f56;
 $color-secondary: #FFEB3B;
 $cd-dot: #0E397F;
 $size: 1vh;
@@ -25,6 +25,18 @@ html,body{
     height: 100%;
     position: relative;
 }
+.haut{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bas{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header{
     display: block;
     background-color: $color-primary;
@@ -33,8 +45,7 @@ header{
     font-weight: bold;
     height: 6rem;
     text-align: center;
-    @font-face {
-        font-family: 'roboto_condensedbold_italic';
+    font-family: 'roboto_condensedbold_italic';
         src: url('RobotoCondensed-BoldItalic-webfont.eot');
         src: url('RobotoCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
              url('RobotoCondensed-BoldItalic-webfont.woff2') format('woff2'),
@@ -43,43 +54,79 @@ header{
              url('RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
         font-weight: normal;
         font-style: normal;
-    }
 }
-ul, li{
-    display: inline-block;
-    list-style: none;
-    width: 30%;
+.btn_note{
+    background-color: #FFCDD2;
+    margin-right: 10rem;
+    cursor: pointer;
     text-align: center;
+    width: 30rem;
+    line-height: 2rem;
+    vertical-align: middle;
 }
- ul li a{
-    display: block;
+.btn_note p a{
     text-decoration: none;
-    font-size: 2rem;
 }
-
+.btn_chic{
+    background-color: #FFEBEE;
+    width: 30rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2rem;
+}
+.btn_chic p a{
+    text-decoration: none;
+}
+.btn_delice {
+    background-color: #E3F2FD;
+    margin-right: 10rem;
+    cursor: pointer;
+    text-align: center;
+    width: 30rem;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+.btn_delice p a{
+    text-decoration: none;
+}
+.btn_gout{
+    background-color: #FAFAFA;
+    margin-right: 10rem;
+    cursor: pointer;
+    text-align: center;
+    width: 30rem;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+.btn_gout p a{
+    text-decoration: none;
+}
 .btn{
     display: flex;
     justify-content: center;
-    background-color: #4CAF50;
+    background-color: $color-primary;
     color: $color-secondary;
     font-size: 1.5rem;
     cursor: pointer;
     text-align: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border-radius:5rem;
-    -moz-border-radius:5rem;
-    -webkit-border-radius:5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius:1rem;
+    -moz-border-radius:1rem;
+    -webkit-border-radius:1rem;
     margin-left: 40%;
     margin-right: 50%;
     margin-top: 4rem;
     width: 25rem;
     margin-bottom: 10rem;
         &_loading{
-    font-size: 2rem;
-    color: #424242;
-    text-align: center;
-}
+            font-size: 2rem;
+            text-align: center;
+    }
 }   
 .dot1 {
     animation: visibility 3s linear infinite;
@@ -152,14 +199,32 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #4CAF50;
+    background-color: $color-primary;
     font-size: 1.5rem;
-    font-weight: bold;
-    color: $color-secondary;
  }
 .mention{
     padding-left: 2rem;
+    font-family: sans-serif;
+        &:hover{
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        }
 }
 .contact{
     padding-right: 2rem;
+    font-family: sans-serif;
+        &:hover{
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        }
+}
+.mention a, .contact a{
+    text-decoration: none;
+    color: $color-secondary;
+}
+@keyframes headshake {
+    25% {
+        transform: translateX(1%);
+    }
+    75% {
+        transform: translateX(1% * -1);
+    }
 }
