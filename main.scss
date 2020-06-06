@@ -5,14 +5,21 @@ $size: 1vh;
 $anim-dur: 1000ms;
 $anim-delay: $anim-dur / 5;
 @mixin btn-menu {
-    display: inline-block;
-    height: 40rem;
-    width: 20rem;
+    display: block;
+    margin-right: 10rem;
+    cursor: pointer;
     text-align: center;
-    margin-right: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: medium;
+    height: 40rem;
+    width: 30rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: opacity 250ms; 
+    overflow: hidden;
+    &:hover {
+        opacity: 0.7;   
+    }
+    
 }
 
 
@@ -25,17 +32,11 @@ html,body{
     height: 100%;
     position: relative;
 }
-.haut{
-    height: 100%;
+.haut, .bas{
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.bas{
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 6rem;
 }
 header{
     display: block;
@@ -57,48 +58,35 @@ header{
 }
 .btn_note{
     background-color: #FFCDD2;
-    margin-right: 10rem;
-    cursor: pointer;
-    text-align: center;
-    width: 30rem;
-    line-height: 2rem;
-    vertical-align: middle;
+    @include btn-menu;   
 }
 .btn_note p a{
     text-decoration: none;
 }
+.btn_note p{
+    transform: scale(1);
+    transition: transform 400ms;
+    & :hover{
+        transform: scale(1.15);
+    }
+}
 .btn_chic{
     background-color: #FFEBEE;
-    width: 30rem;
-    margin-left: 10rem;
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 2rem;
+    @include btn-menu;
 }
 .btn_chic p a{
     text-decoration: none;
 }
 .btn_delice {
     background-color: #E3F2FD;
-    margin-right: 10rem;
-    cursor: pointer;
-    text-align: center;
-    width: 30rem;
-    line-height: 2rem;
-    vertical-align: middle;
+    @include btn-menu;
 }
 .btn_delice p a{
     text-decoration: none;
 }
 .btn_gout{
-    background-color: #FAFAFA;
-    margin-right: 10rem;
-    cursor: pointer;
-    text-align: center;
-    width: 30rem;
-    line-height: 2rem;
-    vertical-align: middle;
+    background-color: #E0F7FA;
+    @include btn-menu;
 }
 .btn_gout p a{
     text-decoration: none;

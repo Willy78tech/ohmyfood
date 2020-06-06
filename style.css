@@ -9,18 +9,11 @@ html, body {
   position: relative;
 }
 
-.haut {
-  height: 100%;
+.haut, .bas {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.bas {
-  height: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  padding-top: 6rem;
 }
 
 header {
@@ -40,26 +33,50 @@ header {
 
 .btn_note {
   background-color: #FFCDD2;
+  display: block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  vertical-align: middle;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: opacity 250ms;
+  overflow: hidden;
+}
+.btn_note:hover {
+  opacity: 0.7;
 }
 
 .btn_note p a {
   text-decoration: none;
 }
 
+.btn_note p {
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.btn_note p :hover {
+  transform: scale(1.15);
+}
+
 .btn_chic {
   background-color: #FFEBEE;
-  width: 30rem;
-  margin-left: 10rem;
+  display: block;
+  margin-right: 10rem;
   cursor: pointer;
   text-align: center;
-  vertical-align: middle;
+  height: 40rem;
+  width: 30rem;
   line-height: 2rem;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: opacity 250ms;
+  overflow: hidden;
+}
+.btn_chic:hover {
+  opacity: 0.7;
 }
 
 .btn_chic p a {
@@ -68,12 +85,20 @@ header {
 
 .btn_delice {
   background-color: #E3F2FD;
+  display: block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  vertical-align: middle;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: opacity 250ms;
+  overflow: hidden;
+}
+.btn_delice:hover {
+  opacity: 0.7;
 }
 
 .btn_delice p a {
@@ -81,13 +106,21 @@ header {
 }
 
 .btn_gout {
-  background-color: #FAFAFA;
+  background-color: #E0F7FA;
+  display: block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  vertical-align: middle;
+  font-size: 1.5rem;
+  opacity: 1;
+  transition: opacity 250ms;
+  overflow: hidden;
+}
+.btn_gout:hover {
+  opacity: 0.7;
 }
 
 .btn_gout p a {
