@@ -33,72 +33,80 @@ header {
 
 .btn_note {
   background-color: #FFCDD2;
-  display: block;
+  display: inline-block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   opacity: 1;
   transition: opacity 250ms;
-  overflow: hidden;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-.btn_note:hover {
-  opacity: 0.7;
+.btn_note :hover {
+  opacity: 0.8;
+  transform: scale(1.5);
 }
 
 .btn_note p a {
   text-decoration: none;
-}
-
-.btn_note p {
-  transform: scale(1);
-  transition: transform 400ms;
-}
-.btn_note p :hover {
-  transform: scale(1.15);
+  font-family: "devroyeregular";
+  src: url("DEVROYE_-webfont.eot");
+  src: url("DEVROYE_-webfont.eot?#iefix") format("embedded-opentype"), url("DEVROYE_-webfont.woff2") format("woff2"), url("DEVROYE_-webfont.woff") format("woff"), url("DEVROYE_-webfont.ttf") format("truetype"), url("DEVROYE_-webfont.svg#devroyeregular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  color: #795548;
 }
 
 .btn_chic {
   background-color: #FFEBEE;
-  display: block;
+  display: inline-block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   opacity: 1;
   transition: opacity 250ms;
-  overflow: hidden;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-.btn_chic:hover {
-  opacity: 0.7;
+.btn_chic :hover {
+  opacity: 0.8;
+  transform: scale(1.5);
 }
 
 .btn_chic p a {
   text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: -webkit-linear-gradient(85deg, #ff3500 20%, #ff00ee 80%);
+  color: -moz-linear-gradient(85deg, #ff3500 20%, #ff00ee 80%);
 }
 
 .btn_delice {
   background-color: #E3F2FD;
-  display: block;
+  display: inline-block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   opacity: 1;
   transition: opacity 250ms;
-  overflow: hidden;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-.btn_delice:hover {
-  opacity: 0.7;
+.btn_delice :hover {
+  opacity: 0.8;
+  transform: scale(1.5);
 }
 
 .btn_delice p a {
@@ -107,20 +115,22 @@ header {
 
 .btn_gout {
   background-color: #E0F7FA;
-  display: block;
+  display: inline-block;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   opacity: 1;
   transition: opacity 250ms;
-  overflow: hidden;
+  transform: scale(1);
+  transition: transform 400ms;
 }
-.btn_gout:hover {
-  opacity: 0.7;
+.btn_gout :hover {
+  opacity: 0.8;
+  transform: scale(1.5);
 }
 
 .btn_gout p a {
