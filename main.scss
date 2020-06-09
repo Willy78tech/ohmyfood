@@ -125,7 +125,7 @@ header{
     }
 }   
 .dot1 {
-    animation: visibility 3s linear infinite;
+    animation: visibility 2s linear infinite both;
      }
     @keyframes visibility {
     0% {
@@ -142,7 +142,7 @@ header{
     }
     }
 .dot2 {
-    animation: visibility2 3s linear infinite;
+    animation: visibility2 2s linear infinite both;
     }
     @keyframes visibility2 {
     0% {
@@ -165,7 +165,7 @@ header{
     }
     }
 .dot3 {
-    animation: visibility3 3s linear infinite;
+    animation: visibility3 2s linear infinite both;
     }
      @keyframes visibility3 {
     0% {
@@ -223,4 +223,33 @@ footer{
     75% {
         transform: translateX(1% * -1);
     }
+}
+
+        //page Menu 1
+
+section{
+    width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}        
+h1, h2, .tete, .pied{
+    text-align: center;
+    font-size: 2rem;
+    color: firebrick;
+}
+.prelude, .point, .mouvement{
+    display: inline-block;
+    
+}
+.plat, .prix{
+    display: inline-block;
+    line-height: 3rem;
+    font-size: 1.5rem;
+}
+.prix{
+    text-align: right;
+    margin-left: 1rem;
+}
+.pied{
+    margin-bottom: 10rem;
 }
