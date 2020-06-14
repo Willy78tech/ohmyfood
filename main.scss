@@ -5,10 +5,12 @@ $size: 1vh;
 $anim-dur: 1000ms;
 $anim-delay: $anim-dur / 5;
 @mixin btn-menu {
-    display: inline-block;
+    display: flex;
     margin-right: 10rem;
     cursor: pointer;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     height: 40rem;
     width: 30rem;
     line-height: 2rem;
@@ -17,7 +19,7 @@ $anim-delay: $anim-dur / 5;
     transition: opacity 250ms; 
     transform: scale(1);
     transition: transform 400ms;
-        & :hover{
+    & :hover{
         opacity: 0.8;
         transform: scale(1.5);
     }
@@ -86,14 +88,15 @@ header{
     color: -moz-linear-gradient(85deg,#ff3500 20%, #ff00ee 80%); 
 }
 .btn_delice {
-    background-color: #E3F2FD;
+    background-color: rgb(231, 243, 250);
     @include btn-menu;
 }
 .btn_delice p a{
     text-decoration: none;
+    color: rgb(58, 225, 255);
 }
 .btn_gout{
-    background-color: #E0F7FA;
+    background-color: #FAFAFA;
     @include btn-menu;
 }
 .btn_gout p a{
@@ -202,14 +205,14 @@ footer{
     padding-left: 2rem;
     font-family: sans-serif;
         &:hover{
-            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) infinite;
         }
 }
 .contact{
     padding-right: 2rem;
     font-family: sans-serif;
         &:hover{
-            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) infinite;
         }
 }
 .mention a, .contact a{
@@ -227,15 +230,31 @@ footer{
 
         //page Menu 1
 
-section{
-    width: 100rem;
-    margin-left: auto;
-    margin-right: auto;
+.menu1{
+    text-align: center;
+    background-color: #FFCDD2;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }        
 h1, h2, .tete, .pied{
     text-align: center;
     font-size: 2rem;
     color: firebrick;
+}
+.tete, .pied{
+    font-weight: bold;
+}
+h2{
+    margin-top: 6rem;
+}
+h1{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 .prelude, .point, .mouvement{
     display: inline-block;
@@ -243,13 +262,61 @@ h1, h2, .tete, .pied{
 }
 .plat, .prix{
     display: inline-block;
-    line-height: 3rem;
-    font-size: 1.5rem;
+    line-height: 4rem;
+    font-size: 2rem;
 }
 .prix{
     text-align: right;
-    margin-left: 1rem;
+    margin-left: 3rem;
+}
+.plat{
+    margin-right: 3rem;
+    text-align: left;
 }
 .pied{
     margin-bottom: 10rem;
+    margin-top: 6rem;
+}
+.pied .fas{
+    margin-right: 2rem;
+}
+
+// Page menu 2
+
+.menu2{
+    text-align: center;
+    background-color: rgb(255, 228, 232);
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+ // page menu 3
+
+
+ .menu3{
+    text-align: center;
+    background-color:  rgb(231, 243, 250);
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+// page menu 4
+
+.menu4{
+    text-align: center;
+    background-color:  #FAFAFA;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }

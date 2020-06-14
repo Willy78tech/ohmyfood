@@ -33,10 +33,12 @@ header {
 
 .btn_note {
   background-color: #FFCDD2;
-  display: inline-block;
+  display: flex;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
@@ -63,10 +65,12 @@ header {
 
 .btn_chic {
   background-color: #FFEBEE;
-  display: inline-block;
+  display: flex;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
@@ -90,11 +94,13 @@ header {
 }
 
 .btn_delice {
-  background-color: #E3F2FD;
-  display: inline-block;
+  background-color: #e7f3fa;
+  display: flex;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
@@ -111,14 +117,17 @@ header {
 
 .btn_delice p a {
   text-decoration: none;
+  color: #3ae1ff;
 }
 
 .btn_gout {
-  background-color: #E0F7FA;
-  display: inline-block;
+  background-color: #FAFAFA;
+  display: flex;
   margin-right: 10rem;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 40rem;
   width: 30rem;
   line-height: 2rem;
@@ -246,7 +255,7 @@ footer {
   font-family: sans-serif;
 }
 .mention:hover {
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
 .contact {
@@ -254,7 +263,7 @@ footer {
   font-family: sans-serif;
 }
 .contact:hover {
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
 .mention a, .contact a {
@@ -270,10 +279,14 @@ footer {
     transform: translateX(-1%);
   }
 }
-section {
-  width: 100rem;
-  margin-left: auto;
-  margin-right: auto;
+.menu1 {
+  text-align: center;
+  background-color: #FFCDD2;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 h1, h2, .tete, .pied {
@@ -282,23 +295,81 @@ h1, h2, .tete, .pied {
   color: firebrick;
 }
 
+.tete, .pied {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h1 {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .prelude, .point, .mouvement {
   display: inline-block;
 }
 
 .plat, .prix {
   display: inline-block;
-  line-height: 3rem;
-  font-size: 1.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
 }
 
 .prix {
   text-align: right;
-  margin-left: 1rem;
+  margin-left: 3rem;
+}
+
+.plat {
+  margin-right: 3rem;
+  text-align: left;
 }
 
 .pied {
   margin-bottom: 10rem;
+  margin-top: 6rem;
+}
+
+.pied .fas {
+  margin-right: 2rem;
+}
+
+.menu2 {
+  text-align: center;
+  background-color: #ffe4e8;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.menu3 {
+  text-align: center;
+  background-color: #e7f3fa;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.menu4 {
+  text-align: center;
+  background-color: #FAFAFA;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
