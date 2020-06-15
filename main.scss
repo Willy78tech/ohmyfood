@@ -15,12 +15,14 @@ $anim-delay: $anim-dur / 5;
     width: 30rem;
     line-height: 2rem;
     font-size: 2rem;
+    position: relative;
+    overflow: hidden;
     opacity: 1;
     transition: opacity 250ms; 
     transform: scale(1);
     transition: transform 400ms;
-    & :hover{
-        opacity: 0.8;
+    &:hover{
+        opacity: 0.7;
         transform: scale(1.5);
     }
 }
@@ -60,47 +62,45 @@ header{
         font-style: normal;
 }
 .btn_note{
-    background-color: #FFCDD2;
+    background: #FFCDD2;
     @include btn-menu;
 }
 .btn_note p a{
     text-decoration: none;
-    font-family: 'devroyeregular';
-    src: url('DEVROYE_-webfont.eot');
-    src: url('DEVROYE_-webfont.eot?#iefix') format('embedded-opentype'),
-         url('DEVROYE_-webfont.woff2') format('woff2'),
-         url('DEVROYE_-webfont.woff') format('woff'),
-         url('DEVROYE_-webfont.ttf') format('truetype'),
-         url('DEVROYE_-webfont.svg#devroyeregular') format('svg');
+    font-family: 'comic sans ms';
     font-weight: bold;
     font-style: normal;
-    color: #795548;    
+    color: #381002;    
 }
 .btn_chic{
-    background-color: #FFEBEE;
+    background: #FFEBEE;
     @include btn-menu;
 }
 .btn_chic p a{
     text-decoration: none;
+    font-family: Arial, sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
     color: -webkit-linear-gradient(85deg,#ff3500 20%, #ff00ee 80%);
     color: -moz-linear-gradient(85deg,#ff3500 20%, #ff00ee 80%); 
 }
 .btn_delice {
-    background-color: rgb(231, 243, 250);
+    background: rgb(231, 243, 250);
     @include btn-menu;
 }
 .btn_delice p a{
     text-decoration: none;
-    color: rgb(58, 225, 255);
-}
+    color: #0770e0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 .btn_gout{
-    background-color: #FAFAFA;
+    background: #FAFAFA;
     @include btn-menu;
 }
 .btn_gout p a{
     text-decoration: none;
+    color: #34C924;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .btn{
     display: flex;
@@ -128,7 +128,7 @@ header{
     }
 }   
 .dot1 {
-    animation: visibility 2s linear infinite both;
+    animation: visibility 1s linear infinite both;
      }
     @keyframes visibility {
     0% {
@@ -145,7 +145,7 @@ header{
     }
     }
 .dot2 {
-    animation: visibility2 2s linear infinite both;
+    animation: visibility2 1s linear infinite both;
     }
     @keyframes visibility2 {
     0% {
@@ -168,7 +168,7 @@ header{
     }
     }
 .dot3 {
-    animation: visibility3 2s linear infinite both;
+    animation: visibility3 1s linear infinite both;
     }
      @keyframes visibility3 {
     0% {

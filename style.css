@@ -32,7 +32,7 @@ header {
 }
 
 .btn_note {
-  background-color: #FFCDD2;
+  background: #FFCDD2;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -43,28 +43,28 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  position: relative;
+  overflow: hidden;
   opacity: 1;
   transition: opacity 250ms;
   transform: scale(1);
   transition: transform 400ms;
 }
-.btn_note :hover {
-  opacity: 0.8;
+.btn_note:hover {
+  opacity: 0.7;
   transform: scale(1.5);
 }
 
 .btn_note p a {
   text-decoration: none;
-  font-family: "devroyeregular";
-  src: url("DEVROYE_-webfont.eot");
-  src: url("DEVROYE_-webfont.eot?#iefix") format("embedded-opentype"), url("DEVROYE_-webfont.woff2") format("woff2"), url("DEVROYE_-webfont.woff") format("woff"), url("DEVROYE_-webfont.ttf") format("truetype"), url("DEVROYE_-webfont.svg#devroyeregular") format("svg");
+  font-family: "comic sans ms";
   font-weight: bold;
   font-style: normal;
-  color: #795548;
+  color: #381002;
 }
 
 .btn_chic {
-  background-color: #FFEBEE;
+  background: #FFEBEE;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -75,18 +75,21 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  position: relative;
+  overflow: hidden;
   opacity: 1;
   transition: opacity 250ms;
   transform: scale(1);
   transition: transform 400ms;
 }
-.btn_chic :hover {
-  opacity: 0.8;
+.btn_chic:hover {
+  opacity: 0.7;
   transform: scale(1.5);
 }
 
 .btn_chic p a {
   text-decoration: none;
+  font-family: Arial, sans-serif;
   background-clip: text;
   -webkit-background-clip: text;
   color: -webkit-linear-gradient(85deg, #ff3500 20%, #ff00ee 80%);
@@ -94,7 +97,7 @@ header {
 }
 
 .btn_delice {
-  background-color: #e7f3fa;
+  background: #e7f3fa;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -105,23 +108,26 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  position: relative;
+  overflow: hidden;
   opacity: 1;
   transition: opacity 250ms;
   transform: scale(1);
   transition: transform 400ms;
 }
-.btn_delice :hover {
-  opacity: 0.8;
+.btn_delice:hover {
+  opacity: 0.7;
   transform: scale(1.5);
 }
 
 .btn_delice p a {
   text-decoration: none;
-  color: #3ae1ff;
+  color: #0770e0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn_gout {
-  background-color: #FAFAFA;
+  background: #FAFAFA;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -132,18 +138,22 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  position: relative;
+  overflow: hidden;
   opacity: 1;
   transition: opacity 250ms;
   transform: scale(1);
   transition: transform 400ms;
 }
-.btn_gout :hover {
-  opacity: 0.8;
+.btn_gout:hover {
+  opacity: 0.7;
   transform: scale(1.5);
 }
 
 .btn_gout p a {
   text-decoration: none;
+  color: #34C924;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .btn {
@@ -173,7 +183,7 @@ header {
 }
 
 .dot1 {
-  animation: visibility 2s linear infinite both;
+  animation: visibility 1s linear infinite both;
 }
 
 @keyframes visibility {
@@ -191,7 +201,7 @@ header {
   }
 }
 .dot2 {
-  animation: visibility2 2s linear infinite both;
+  animation: visibility2 1s linear infinite both;
 }
 
 @keyframes visibility2 {
@@ -215,7 +225,7 @@ header {
   }
 }
 .dot3 {
-  animation: visibility3 2s linear infinite both;
+  animation: visibility3 1s linear infinite both;
 }
 
 @keyframes visibility3 {
