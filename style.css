@@ -46,13 +46,15 @@ header {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 250ms;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: scale(1);
-  transition: transform 400ms;
+  -webkit-transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 .btn_note:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 .btn_note p a {
@@ -78,13 +80,15 @@ header {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 250ms;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: scale(1);
-  transition: transform 400ms;
+  -webkit-transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 .btn_chic:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 .btn_chic p a {
@@ -111,13 +115,15 @@ header {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 250ms;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: scale(1);
-  transition: transform 400ms;
+  -webkit-transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 .btn_delice:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 .btn_delice p a {
@@ -141,13 +147,15 @@ header {
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 250ms;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   transform: scale(1);
-  transition: transform 400ms;
+  -webkit-transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 .btn_gout:hover {
-  opacity: 0.7;
-  transform: scale(1.5);
+  opacity: 0.5;
+  transform: scale(1.2);
 }
 
 .btn_gout p a {
@@ -178,31 +186,32 @@ header {
   margin-bottom: 10rem;
 }
 
-.spinner {
+.loader {
   text-align: center;
+  margin-left: 2rem;
 }
 
-.spinner > div {
-  width: 18px;
-  height: 18px;
+.loader > div {
+  width: 10px;
+  height: 10px;
   background-color: #FFEB3B;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  -webkit-animation: loading 1.4s infinite ease-in-out both;
+  animation: loading 1.4s infinite ease-in-out both;
 }
 
-.spinner .bounce1 {
+.loader .dot1 {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-.spinner .bounce2 {
+.loader .dot2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
 
-@-webkit-keyframes sk-bouncedelay {
+@-webkit-keyframes loading {
   0%, 80%, 100% {
     -webkit-transform: scale(0);
   }
@@ -210,7 +219,7 @@ header {
     -webkit-transform: scale(1);
   }
 }
-@keyframes sk-bouncedelay {
+@keyframes loading {
   0%, 80%, 100% {
     -webkit-transform: scale(0);
     transform: scale(0);
@@ -269,12 +278,15 @@ footer {
   margin-bottom: 10rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-family: Helvetica, Arial;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 h1, h2, .tete, .pied {
   text-align: center;
   font-size: 2rem;
-  color: firebrick;
+  color: #6e0606;
 }
 
 .tete, .pied {
@@ -317,6 +329,7 @@ h1 {
   display: inline-block;
   line-height: 4rem;
   font-size: 2rem;
+  padding-top: 4rem;
 }
 
 .prix {
@@ -325,7 +338,7 @@ h1 {
 }
 
 .plat {
-  margin-right: 3rem;
+  margin-right: 20rem;
   text-align: left;
 }
 
@@ -347,6 +360,9 @@ h1 {
   margin-top: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-family: Helvetica, Arial;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .menu3 {
@@ -358,6 +374,9 @@ h1 {
   margin-top: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-family: Helvetica, Arial;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .menu4 {
@@ -369,6 +388,9 @@ h1 {
   margin-top: 4rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-family: Helvetica, Arial;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
