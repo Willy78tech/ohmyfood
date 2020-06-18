@@ -48,13 +48,14 @@ header {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  perspective: 500px;
   transform: scale(1);
   -webkit-transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 .btn_note:hover {
   opacity: 0.5;
-  transform: scale(1.2);
+  transform: scale3d(1.2, 1.2, 0.2);
 }
 
 .btn_note p a {
@@ -82,13 +83,14 @@ header {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  perspective: 500px;
   transform: scale(1);
   -webkit-transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 .btn_chic:hover {
   opacity: 0.5;
-  transform: scale(1.2);
+  transform: scale3d(1.2, 1.2, 0.2);
 }
 
 .btn_chic p a {
@@ -116,13 +118,14 @@ header {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  perspective: 500px;
   transform: scale(1);
   -webkit-transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 .btn_delice:hover {
   opacity: 0.5;
-  transform: scale(1.2);
+  transform: scale3d(1.2, 1.2, 0.2);
 }
 
 .btn_delice p a {
@@ -148,13 +151,14 @@ header {
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  perspective: 500px;
   transform: scale(1);
   -webkit-transform: scale(1);
   transition: 0.3s ease-in-out;
 }
 .btn_gout:hover {
   opacity: 0.5;
-  transform: scale(1.2);
+  transform: scale3d(1.2, 1.2, 0.2);
 }
 
 .btn_gout p a {

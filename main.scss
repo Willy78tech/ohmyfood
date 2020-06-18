@@ -19,13 +19,15 @@ $anim-delay: $anim-dur / 5;
     overflow: hidden;
     opacity: 1;
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; 
+    transition: 0.3s ease-in-out;
+    perspective: 500px; 
     transform: scale(1);
     -webkit-transform: scale(1);
     transition: 0.3s ease-in-out;
     &:hover{
         opacity: 0.5;
-        transform: scale(1.2);
+        transform: scale3d(1.2, 1.2, 0.2);
+        
     }
 }
 html{
