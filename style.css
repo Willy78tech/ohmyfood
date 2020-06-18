@@ -66,7 +66,7 @@ header {
 }
 
 .btn_chic {
-  background: #FFEBEE;
+  background: #fdf2f4;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -94,10 +94,9 @@ header {
 .btn_chic p a {
   text-decoration: none;
   font-family: Arial, sans-serif;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: -webkit-linear-gradient(85deg, #ff3500 20%, #ff00ee 80%);
-  color: -moz-linear-gradient(85deg, #ff3500 20%, #ff00ee 80%);
+  color: linear-gradient(98deg, #df560f 20%, #d300ff 55%, #3211c5 80%);
+  color: -webkit-linear-gradient(98deg, #df560f 20%, #d300ff 55%, #3211c5 80%);
+  color: -moz-linear-gradient(98deg, #df560f 20%, #d300ff 55%, #3211c5 80%);
 }
 
 .btn_delice {
