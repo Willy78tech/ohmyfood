@@ -19,16 +19,18 @@ $anim-delay: $anim-dur / 5;
     overflow: hidden;
     opacity: 1;
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    perspective: 500px; 
+    transition: 0.3s ease-in-out; 
+    &:hover{
+        opacity: 0.5;   
+    }
+}
+@mixin transform-menu {
     transform: scale(1);
     -webkit-transform: scale(1);
     transition: 0.3s ease-in-out;
-    &:hover{
-        opacity: 0.5;
-        transform: scale3d(1.2, 1.2, 0.2);
-        
-    }
+        &:hover{
+            transform: scale(1.5);
+        }
 }
 html{
     font-size: 62.5%;
@@ -67,6 +69,9 @@ header{
     background: #FFCDD2;
     @include btn-menu;
 }
+.btn_note p{
+    @include transform-menu;
+}
 .btn_note p a{
     text-decoration: none;
     font-family: 'comic sans ms';
@@ -78,16 +83,26 @@ header{
     background: #fdf2f4;
     @include btn-menu;
 }
+.btn_chic p{
+    @include transform-menu;
+}
 .btn_chic p a{
     text-decoration: none;
     font-family: Arial, sans-serif;
-    color: linear-gradient(98deg,#df560f 20%, #d300ff 55%, #3211c5 80%);
-    color: -webkit-linear-gradient(98deg,#df560f 20%, #d300ff 55%, #3211c5 80%);
-    color: -moz-linear-gradient(98deg,#df560f 20%, #d300ff 55%, #3211c5 80%); 
+    background: #df560f;
+    background: linear-gradient(90deg,#df560f 20%, #3211c5 55%);
+    background: -webkit-linear-gradient(90deg,#df560f 20%, #3211c5 55%);
+    background: -moz-linear-gradient(90deg,#df560f 20%, #3211c5 55%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .btn_delice {
     background: rgb(231, 243, 250);
     @include btn-menu;
+}
+.btn_delice p{
+    @include transform-menu;
 }
 .btn_delice p a{
     text-decoration: none;
@@ -97,6 +112,9 @@ header{
 .btn_gout{
     background: #FAFAFA;
     @include btn-menu;
+}
+.btn_gout p{
+    @include transform-menu;
 }
 .btn_gout p a{
     text-decoration: none;
