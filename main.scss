@@ -246,25 +246,15 @@ h2{
     margin-top: 6rem;
     position: relative;
     cursor: pointer;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 2s;
+    background-size: 0% 100%;
 }
+h2:hover {
+    background-size: 100% 100%;
+  }
 .fas{
     color: coral;
-}
-h2::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 4px;
-    background-color: aqua;
-    transform-origin: 0% 50%;
-    transform: scaleX(0);
-    transition: transform 1000ms cubic-bezier(.32,0,.07,1);
-  }
-   
-  h2:hover::after {
-    transform: scaleX(1);
 }
 h1{
     padding-top: 4rem;
@@ -282,12 +272,44 @@ h1{
     font-size: 2rem;
     padding-top: 4rem;
 }
+.plat_esquisse{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: left;
+    margin-right: 33rem;
+}
+.plat_terminer{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: left;
+    margin-right: 46rem;
+}
+.plat_papilles{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: left;
+    margin-right: 4rem;
+}
+.plat_commencer{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: left;
+    margin-right: 18rem;
+}
 .prix{
     text-align: right;
     margin-left: 3rem;
 }
 .plat{
-    margin-right: 20rem;
+    margin-right: 24rem;
     text-align: left;
 }
 .pied{
