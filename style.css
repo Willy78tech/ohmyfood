@@ -19,8 +19,8 @@ html, body {
 
 header {
   display: block;
-  background-color: #065f56;
-  color: #FFEB3B;
+  background-color: #579c87;
+  color: #fdcb46;
   font-size: 4rem;
   font-weight: bold;
   height: 6rem;
@@ -33,7 +33,7 @@ header {
 }
 
 .btn_note {
-  background: #FFCDD2;
+  background: #fcdfdb;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -44,6 +44,9 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -72,7 +75,7 @@ header {
 }
 
 .btn_chic {
-  background: #fdf2f4;
+  background: #fff5fe;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -83,6 +86,9 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -115,7 +121,7 @@ header {
 }
 
 .btn_delice {
-  background: #e7f3fa;
+  background: #f9f9f9;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -126,6 +132,9 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -152,7 +161,7 @@ header {
 }
 
 .btn_gout {
-  background: #FAFAFA;
+  background: #fdfffd;
   display: flex;
   margin-right: 10rem;
   cursor: pointer;
@@ -163,6 +172,9 @@ header {
   width: 30rem;
   line-height: 2rem;
   font-size: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -191,8 +203,8 @@ header {
 .btn {
   display: flex;
   justify-content: center;
-  background-color: #065f56;
-  color: #FFEB3B;
+  background-color: #579c87;
+  color: #fdcb46;
   font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
@@ -218,7 +230,7 @@ header {
 .loader > div {
   width: 10px;
   height: 10px;
-  background-color: #FFEB3B;
+  background-color: #fdcb46;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: loading 1.4s infinite ease-in-out both;
@@ -261,7 +273,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #065f56;
+  background-color: #579c87;
   font-size: 1.5rem;
 }
 
@@ -283,7 +295,7 @@ footer {
 
 .mention a, .contact a {
   text-decoration: none;
-  color: #FFEB3B;
+  color: #fdcb46;
 }
 
 @keyframes headshake {
@@ -297,7 +309,7 @@ footer {
 .menu1 {
   text-align: center;
   background-color: #FFCDD2;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-right: 10rem;
   margin-left: 10rem;
   margin-bottom: 10rem;
@@ -308,13 +320,13 @@ footer {
   padding-right: 10rem;
 }
 
-h1, h2, .tete, .pied {
+h1, h2, .header, .footer {
   text-align: center;
   font-size: 2rem;
   color: #3b0101;
 }
 
-.tete, .pied {
+.header, .footer {
   font-weight: bold;
 }
 

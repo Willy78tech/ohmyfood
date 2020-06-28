@@ -1,5 +1,5 @@
-$color-primary: #065f56;
-$color-secondary: #FFEB3B;
+$color-primary: #579c87;
+$color-secondary: #fdcb46;
 $cd-dot: #0E397F;
 $size: 1vh;
 $anim-dur: 1000ms;
@@ -15,6 +15,9 @@ $anim-delay: $anim-dur / 5;
     width: 30rem;
     line-height: 2rem;
     font-size: 2rem;
+    box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
     position: relative;
     overflow: hidden;
     opacity: 1;
@@ -66,7 +69,7 @@ header{
         font-style: normal;
 }
 .btn_note{
-    background: #FFCDD2;
+    background: #fcdfdb;
     @include btn-menu;
 }
 .btn_note p{
@@ -80,7 +83,7 @@ header{
     color: #381002;    
 }
 .btn_chic{
-    background: #fdf2f4;
+    background: #fff5fe;
     @include btn-menu;
 }
 .btn_chic p{
@@ -98,7 +101,7 @@ header{
     -webkit-background-clip: text;
 }
 .btn_delice {
-    background: rgb(231, 243, 250);
+    background: #f9f9f9;
     @include btn-menu;
 }
 .btn_delice p{
@@ -110,7 +113,7 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 .btn_gout{
-    background: #FAFAFA;
+    background: #fdfffd;
     @include btn-menu;
 }
 .btn_gout p{
@@ -224,7 +227,7 @@ footer{
 .menu1{
     text-align: center;
     background-color: #FFCDD2;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-right: 10rem;
     margin-left: 10rem;
     margin-bottom: 10rem;
@@ -234,12 +237,12 @@ footer{
     padding-left: 10rem;
     padding-right: 10rem;
 }        
-h1, h2, .tete, .pied{
+h1, h2, .header, .footer{
     text-align: center;
     font-size: 2rem;
     color: rgb(59, 1, 1);
 }
-.tete, .pied{
+.header, .footer{
     font-weight: bold;
 }
 h2{
