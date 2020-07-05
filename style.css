@@ -23,6 +23,14 @@ html, body {
   align-items: center;
   padding-top: 6rem;
 }
+@media screen and (max-width: 1024px) {
+  .haut, .bas {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    align-items: center;
+  }
+}
 
 header {
   display: block;
@@ -33,6 +41,12 @@ header {
   height: 6rem;
   text-align: center;
   font-family: "roboto_condensedbold_italic";
+}
+@media screen and (max-width: 1024px) {
+  header {
+    display: block;
+    width: 100%;
+  }
 }
 
 .btn_note {
@@ -58,6 +72,14 @@ header {
 }
 .btn_note:hover {
   opacity: 0.5;
+}
+@media screen and (max-width: 1024px) {
+  .btn_note {
+    margin-bottom: 4rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn_note p {
@@ -104,6 +126,13 @@ header {
 }
 .btn_chic:hover {
   opacity: 0.5;
+}
+@media screen and (max-width: 1024px) {
+  .btn_chic {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn_chic p {
@@ -153,6 +182,14 @@ header {
 .btn_delice:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 1024px) {
+  .btn_delice {
+    margin-bottom: 4rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .btn_delice p {
   transform: scale(1);
@@ -201,6 +238,13 @@ header {
 .btn_gout:hover {
   opacity: 0.5;
 }
+@media screen and (max-width: 1024px) {
+  .btn_gout {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .btn_gout p {
   transform: scale(1);
@@ -245,6 +289,17 @@ header {
   margin-top: 4rem;
   width: 25rem;
   margin-bottom: 10rem;
+}
+@media screen and (max-width: 1024px) {
+  .btn {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    width: 20rem;
+  }
 }
 
 .loader {
@@ -353,6 +408,12 @@ img {
   -moz-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
   -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
 }
+@media screen and (max-width: 1024px) {
+  .menu1 {
+    width: 100%;
+    height: auto;
+  }
+}
 
 h1, h2, .header, .footer {
   text-align: center;
@@ -440,10 +501,9 @@ h1 {
 }
 
 .menu2 > h1 {
-  background: #df560f;
-  background: linear-gradient(90deg, #df560f 20%, #3211c5 55%);
-  background: -webkit-linear-gradient(90deg, #df560f 20%, #3211c5 55%);
-  background: -moz-linear-gradient(90deg, #df560f 20%, #3211c5 55%);
+  background: #924cf9;
+  background: linear-gradient(325deg, #924cf9 30%, #e0881d 93%);
+  background: -moz-linear-gradient(325deg, #924cf9 30%, #e0881d 93%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }

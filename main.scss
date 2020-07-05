@@ -60,6 +60,13 @@ html,body{
     justify-content: center;
     align-items: center;
     padding-top: 6rem;
+
+    @media screen and (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 4rem;
+        align-items: center;
+    }
 }
 header{
     display: block;
@@ -70,10 +77,21 @@ header{
     height: 6rem;
     text-align: center;
     font-family: 'roboto_condensedbold_italic';
+
+    @media screen and (max-width: 1024px) {
+        display: block;
+        width: 100%;
+    }
 }
 .btn_note{
     background: #fcdfdb;
     @include btn-menu;
+    @media screen and (max-width: 1024px){
+        margin-bottom: 4rem;
+        width: 20rem;  
+        margin-left: auto; 
+        margin-right: auto;
+    }
 }
 .btn_note p{
     @include transform-menu;
@@ -91,6 +109,11 @@ header{
 .btn_chic{
     background: #fff5fe;
     @include btn-menu;
+    @media screen and (max-width: 1024px){
+        width: 20rem;  
+        margin-left: auto; 
+        margin-right: auto;
+    }
 }
 .btn_chic p{
     @include transform-menu;
@@ -110,6 +133,12 @@ header{
 .btn_delice {
     background: #f9f9f9;
     @include btn-menu;
+    @media screen and (max-width: 1024px){
+        margin-bottom: 4rem;
+        width: 20rem;  
+        margin-left: auto; 
+        margin-right: auto;   
+    }
 }
 .btn_delice p{
     @include transform-menu;
@@ -129,6 +158,11 @@ header{
 .btn_gout{
     background: #fdfffd;
     @include btn-menu;
+    @media screen and (max-width: 1024px){
+        width: 20rem;  
+        margin-left: auto; 
+        margin-right: auto;
+    }
 }
 .btn_gout p{
     @include transform-menu;
@@ -165,6 +199,16 @@ header{
     margin-top: 4rem;
     width: 25rem;
     margin-bottom: 10rem;
+
+    @media screen and (max-width:1024px){
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        width: 20rem;
+    }
  }
 .loader {
     text-align: center;
@@ -265,6 +309,11 @@ img{
     box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
+
+    @media screen and (max-width: 1024px){
+        width: 100%;
+        height: auto;
+    }
 }        
 h1, h2, .header, .footer{
     text-align: center;
@@ -343,10 +392,9 @@ h1{
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
 }
 .menu2 > h1{
-    background: #df560f;
-    background: linear-gradient(90deg,#df560f 20%, #3211c5 55%);
-    background: -webkit-linear-gradient(90deg,#df560f 20%, #3211c5 55%);
-    background: -moz-linear-gradient(90deg,#df560f 20%, #3211c5 55%);
+    background: rgb(146,76,249);
+    background: linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
+    background: -moz-linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
