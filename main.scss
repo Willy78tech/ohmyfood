@@ -118,7 +118,7 @@ header{
 .btn_chic p{
     @include transform-menu;
 }
-.btn_chic p a{
+.chic{
     text-decoration: none;
     font-family: Arial, sans-serif;
     background: rgb(146,76,249);
@@ -129,6 +129,8 @@ header{
 }
 .carte_chic{
     color: #c77412;
+    text-decoration: none;
+    font-size: 3rem;
 }
 .btn_delice {
     background: #f9f9f9;
@@ -143,7 +145,7 @@ header{
 .btn_delice p{
     @include transform-menu;
 }
-.btn_delice p a{
+.delice {
     text-decoration: none;
     background: rgb(27,76,228);
     background: linear-gradient(90deg, rgba(27,76,228,1) 35%, rgba(8,137,251,1) 54%);
@@ -154,6 +156,8 @@ header{
     }
 .carte_delice{
     color: #0887fb;
+    text-decoration: none;
+    font-size: 3rem;
 }
 .btn_gout{
     background: #fdfffd;
@@ -167,7 +171,7 @@ header{
 .btn_gout p{
     @include transform-menu;
 }
-.btn_gout p a{
+.gout {
     text-decoration: none;
     background: rgb(65,150,60);
     background: linear-gradient(90deg, rgba(65,150,60,1) 23%, rgba(190,255,127,1) 84%);
@@ -178,6 +182,8 @@ header{
 }
 .carte_gout{
     color: #72bf56;
+    text-decoration: none;
+    font-size: 3rem;
 }
 .btn{
     display: flex;
@@ -291,6 +297,17 @@ img{
     width: 90rem;
     height: 5rem;
 }
+.acceuil{
+    display: block;
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 6rem;
+    text-align: center;
+    font-family: 'roboto_condensedbold_italic';
+    text-decoration: none;
+}
 
         //page Menu 1
 
@@ -323,7 +340,7 @@ h1, h2, .header, .footer{
 .header, .footer{
     font-weight: bold;
 }
-h2{
+h2, h3, h4{
     margin-top: 6rem;
     position: relative;
     cursor: pointer;
@@ -395,8 +412,19 @@ h1{
     background: rgb(146,76,249);
     background: linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
     background: -moz-linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titre_appetit{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(to top, #B71C1C 0%, #B71C1C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 2s;
+    background-size: 0% 100%;
+    color: #c67412;
 }
 .plat_appetit{
     display: inline-block;
@@ -414,6 +442,17 @@ h1{
     padding-top: 4rem;
     color: #c67412;
 }
+.titre_papilles{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(to top, #B71C1C 0%, #B71C1C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 2s;
+    background-size: 0% 100%;
+    color: #a56799;
+}
 .plat_papilles{
     display: inline-block;
     line-height: 4rem;
@@ -429,6 +468,17 @@ h1{
     font-size: 2rem;
     padding-top: 4rem;
     color: #a56799;
+}
+.titre_sucrée{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 6rem;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(to top, #B71C1C 0%, #B71C1C 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size 2s;
+    background-size: 0% 100%;
+    color: #6e4ccc;
 }
 .plat_sucrée{
     display: inline-block;
