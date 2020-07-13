@@ -38,6 +38,18 @@ $anim-delay: $anim-dur / 5;
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'robotolight';
+    src: url('Roboto-Light-webfont.eot');
+    src: url('Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Light-webfont.woff2') format('woff2'),
+         url('Roboto-Light-webfont.woff') format('woff'),
+         url('Roboto-Light-webfont.ttf') format('truetype'),
+         url('Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 @mixin transform-menu {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -152,7 +164,8 @@ header{
     background: -moz-linear-gradient(90deg, rgba(27,76,228,1) 35%, rgba(8,137,251,1) 54%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'robotolight';
+    font-weight: bold;
     }
 .carte_delice{
     color: #0887fb;
@@ -346,6 +359,16 @@ h1, h2, .header, .footer{
 .header, .footer{
     font-weight: bold;
 }
+img{
+    width: 30rem;
+    height: 2rem;
+}
+.img_note1 {
+    float: left;
+}
+.img_note2 {
+    float: right;
+}
 h2, h3, h4{
     margin-top: 6rem;
     position: relative;
@@ -429,6 +452,11 @@ h1{
         padding-left: 1rem;
         padding-right: 1rem;
     }
+}
+.img_papilles1a {
+    float: left;
+    width: 10rem;
+    height: 2rem;
 }
 .titre_chic{
     background: rgb(146,76,249);
