@@ -80,8 +80,7 @@ html,body{
         align-items: center;
     }
 }
-header{
-    display: block;
+header h1{
     background-color: $color-primary;
     color: $color-secondary;
     font-size: 4rem;
@@ -351,7 +350,7 @@ img{
         padding-right: 1rem;
     }
 }        
-h1, h2, .header, .footer{
+h2, h3, .header, .footer{
     text-align: center;
     font-size: 2rem;
     color: #3d1319;
@@ -363,13 +362,7 @@ img{
     width: 30rem;
     height: 2rem;
 }
-.img_note1 {
-    float: left;
-}
-.img_note2 {
-    float: right;
-}
-h2, h3, h4{
+h3, h4, h5{
     margin-top: 6rem;
     position: relative;
     cursor: pointer;
@@ -377,7 +370,7 @@ h2, h3, h4{
     transition: background-size 2s;
     background-size: 0% 100%;
 }
-h2:hover {
+h3:hover {
     background-size: 100% 100%;
   }
 .fas{
@@ -387,7 +380,7 @@ h2:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-h1{
+h2{
     padding-top: 4rem;
     padding-bottom: 3rem;
     font-size: 3rem;
@@ -673,13 +666,13 @@ h1{
         display: inline-block;
     }
 }
-.menu4 > h1{
+.menu4 > h2{
     color: #34C924;
 }
-.menu4 > h2, .menu3 > h2{
+.menu4 > h3, .menu3 > h3{
     color: black;
     font-style: italic;
 }
-.menu3 > h1{
+.menu3 > h2{
     color: #0770e0;
 }
