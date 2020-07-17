@@ -21,17 +21,29 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  position: relative;
 }
 
-.haut, .bas {
+.haut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .haut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bas {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 6rem;
 }
 @media screen and (max-width: 1024px) {
-  .haut, .bas {
+  .bas {
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
@@ -463,6 +475,11 @@ img {
   height: 2rem;
 }
 
+.element_decor {
+  display: flex;
+  justify-content: space-between;
+}
+
 h3, h4, h5 {
   margin-top: 6rem;
   position: relative;
@@ -560,12 +577,6 @@ h2 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-.img_papilles1a {
-  float: left;
-  width: 10rem;
-  height: 2rem;
 }
 
 .titre_chic {
