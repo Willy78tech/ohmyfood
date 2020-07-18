@@ -20,7 +20,8 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .haut {
@@ -59,6 +60,7 @@ header h1 {
   height: 6rem;
   text-align: center;
   font-family: "roboto_condensedbold_italic";
+  margin-top: 0;
 }
 @media screen and (max-width: 1024px) {
   header h1 {
@@ -460,8 +462,13 @@ img {
   }
 }
 
-h2, h3, .header, .footer {
+h2, .header, .footer {
   text-align: center;
+  font-size: 2rem;
+  color: #3d1319;
+}
+
+h3 {
   font-size: 2rem;
   color: #3d1319;
 }
@@ -473,9 +480,10 @@ h2, h3, .header, .footer {
 img {
   width: 30rem;
   height: 2rem;
+  margin-top: 6rem;
 }
 
-.element_decor {
+.element_decor, h3 {
   display: flex;
   justify-content: space-between;
 }
