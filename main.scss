@@ -111,9 +111,12 @@ header h1{
     @include btn-menu;
     @media screen and (max-width: 1024px){
         margin-bottom: 4rem;
-        width: 20rem;  
+        width: 40rem;  
         margin-left: auto; 
         margin-right: auto;
+    }
+    @media screen and (max-width: 450px){
+        width: 25rem;
     }
 }
 .btn_note p{
@@ -133,9 +136,12 @@ header h1{
     background: #fff5fe;
     @include btn-menu;
     @media screen and (max-width: 1024px){
-        width: 20rem;  
+        width: 40rem;  
         margin-left: auto; 
         margin-right: auto;
+    }
+    @media screen and (max-width: 450px){
+        width: 25rem;
     }
 }
 .btn_chic p{
@@ -160,9 +166,12 @@ header h1{
     @include btn-menu;
     @media screen and (max-width: 1024px){
         margin-bottom: 4rem;
-        width: 20rem;  
+        width: 40rem;  
         margin-left: auto; 
         margin-right: auto;   
+    }
+    @media screen and (max-width: 450px){
+        width: 25rem;
     }
 }
 .btn_delice p{
@@ -187,9 +196,12 @@ header h1{
     background: #fdfffd;
     @include btn-menu;
     @media screen and (max-width: 1024px){
-        width: 20rem;  
+        width: 40rem;  
         margin-left: auto; 
         margin-right: auto;
+    }
+    @media screen and (max-width: 450px){
+        width: 25rem;
     }
 }
 .btn_gout p{
@@ -289,6 +301,10 @@ footer{
     right: 0;
     background-color: $color-primary;
     font-size: 1.5rem;
+
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
  }
 .mention{
     padding-left: 2rem;
@@ -356,10 +372,18 @@ img{
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
 
     @media screen and (max-width: 1024px){
-        margin-left: 2rem;
-        margin-right: 2rem;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    @media screen and (max-width: 400px) {
+        text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }        
 h2, .header, .footer{
@@ -378,6 +402,13 @@ img{
     width: 30rem;
     height: 2rem;
     margin-top: 6rem;
+
+    @media screen and (max-width: 1024px){
+        width: 10rem;
+    }
+    @media screen and (max-width: 400px){
+        width: 5rem;
+    }
 }
 .element_decor, h3 {
         display: flex;
@@ -417,8 +448,10 @@ h2{
     font-size: 2rem;
     padding-top: 4rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
     }
 }
 .prix{
@@ -426,6 +459,9 @@ h2{
     margin-left: 3rem;
     @media screen and (max-width: 1024px){
         margin-left: 1rem;
+    }
+    @media screen and (max-width: 550px){
+        margin-left: 0.5rem;
     }
 }
 .plat{

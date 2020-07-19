@@ -96,9 +96,14 @@ header h1 {
 @media screen and (max-width: 1024px) {
   .btn_note {
     margin-bottom: 4rem;
-    width: 20rem;
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn_note {
+    width: 25rem;
   }
 }
 
@@ -149,9 +154,14 @@ header h1 {
 }
 @media screen and (max-width: 1024px) {
   .btn_chic {
-    width: 20rem;
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn_chic {
+    width: 25rem;
   }
 }
 
@@ -207,9 +217,14 @@ header h1 {
 @media screen and (max-width: 1024px) {
   .btn_delice {
     margin-bottom: 4rem;
-    width: 20rem;
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn_delice {
+    width: 25rem;
   }
 }
 
@@ -265,9 +280,14 @@ header h1 {
 }
 @media screen and (max-width: 1024px) {
   .btn_gout {
-    width: 20rem;
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btn_gout {
+    width: 25rem;
   }
 }
 
@@ -383,6 +403,11 @@ footer {
   background-color: #579c87;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 400px) {
+  footer {
+    width: 100%;
+  }
+}
 
 .mention {
   padding-left: 2rem;
@@ -455,10 +480,20 @@ img {
 }
 @media screen and (max-width: 1024px) {
   .menu1 {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu1 {
+    text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -481,6 +516,16 @@ img {
   width: 30rem;
   height: 2rem;
   margin-top: 6rem;
+}
+@media screen and (max-width: 1024px) {
+  img {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  img {
+    width: 5rem;
+  }
 }
 
 .element_decor, h3 {
@@ -528,8 +573,12 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat, .prix {
-    font-size: 0.9rem;
-    display: inline-block;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .plat, .prix {
+    font-size: 0.8rem;
   }
 }
 
@@ -540,6 +589,11 @@ h2 {
 @media screen and (max-width: 1024px) {
   .prix {
     margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .prix {
+    margin-left: 0.5rem;
   }
 }
 
