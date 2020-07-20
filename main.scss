@@ -375,8 +375,8 @@ img{
         text-align: center;
         padding-left: 4rem;
         padding-right: 4rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
     @media screen and (max-width: 400px) {
         text-align: center;
@@ -453,6 +453,9 @@ h2{
     @media screen and (max-width: 550px){
         font-size: 0.8rem;
     }
+    @media screen and (max-width: 320px){
+        font-size: 0.7rem;
+    }
 }
 .prix{
     text-align: right;
@@ -463,12 +466,20 @@ h2{
     @media screen and (max-width: 550px){
         margin-left: 0.5rem;
     }
+    @media screen and (max-width: 320px){
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        font-size: 0.5rem;
+    }
 }
 .plat{
     margin-right: 10rem;
     text-align: left;
     @media screen and (max-width: 1024px){
         margin-right: 2rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 0.2rem;
     }
 }
 .footer{
@@ -496,11 +507,20 @@ h2{
     box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
+    
     @media screen and (max-width: 1024px){
-        margin-left: 2rem;
-        margin-right: 2rem;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    @media screen and (max-width: 400px) {
+        text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 .titre_chic{
@@ -530,8 +550,11 @@ h2{
     color: #c67412;
     margin-right: 20rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
     }
 }
 .prix_appetit{
@@ -540,9 +563,14 @@ h2{
     font-size: 2rem;
     padding-top: 4rem;
     color: #c67412;
+    
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 550px){
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
     }
 }
 .titre_papilles{
@@ -565,8 +593,15 @@ h2{
     margin-right: 4rem;
     color: #a56799;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 0.1rem;
+        font-size: 0.5rem;
     }
 }
 .prix_papilles{
@@ -575,9 +610,18 @@ h2{
     font-size: 2rem;
     padding-top: 4rem;
     color: #a56799;
+   
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 550px){
+        margin-left: 0.5rem;
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-right: 0.1rem;
+        font-size: 0.5rem;
     }
 }
 .titre_sucrée{
@@ -600,8 +644,11 @@ h2{
     margin-right: 22rem;
     color: #6e4ccc;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
     }
 }
 .titre_appetit:hover, .titre_papilles:hover, .titre_sucrée:hover{
@@ -626,11 +673,20 @@ h2{
     box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
+    
     @media screen and (max-width: 1024px){
-        margin-left: 2rem;
-        margin-right: 2rem;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    @media screen and (max-width: 400px) {
+        text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 .plat_terminer{
@@ -641,8 +697,11 @@ h2{
     text-align: left;
     margin-right: 34rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
     }
 }
 .plat_commencer{
@@ -653,8 +712,15 @@ h2{
     text-align: left;
     margin-right: 3rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 0.1rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -675,11 +741,20 @@ h2{
     box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -moz-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
     -webkit-box-shadow: 0px 0px 10px 2px rgba(119, 119, 119, 0.75);
+    
     @media screen and (max-width: 1024px){
-        margin-left: 2rem;
-        margin-right: 2rem;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    @media screen and (max-width: 400px) {
+        text-align: center;
         padding-left: 1rem;
         padding-right: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 .plat_esquisse{
@@ -690,8 +765,15 @@ h2{
     text-align: left;
     margin-right: 12rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 0.1rem;
+        font-size: 0.7rem;
     }
 }
 .plat_maître{
@@ -702,8 +784,16 @@ h2{
     text-align: left;
     margin-right: 2rem;
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 0.1rem;
+        font-size: 0.7rem;
     }
 }
 .plat_art{
@@ -713,9 +803,18 @@ h2{
     padding-top: 4rem;
     text-align: left;
     margin-right: 4rem;
+
     @media screen and (max-width: 1024px){
-        font-size: 0.9rem;
-        display: inline-block;
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    @media screen and (max-width: 550px){
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 0.7rem;
+        margin-right: 0.2rem;
     }
 }
 .menu4 > h2{
