@@ -47,7 +47,34 @@ $anim-delay: $anim-dur / 5;
          url('Roboto-Light-webfont.svg#robotolight') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('croissantone-regular-webfont.woff2') format('woff2'),
+         url('croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'amitaregular';
+    src: url('amita-regular-webfont.woff2') format('woff2'),
+         url('amita-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'titilliumitalic';
+    src: url('titillium-regularitalic-webfont.woff2') format('woff2'),
+         url('titillium-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 @mixin transform-menu {
     transform: scale(1);
@@ -110,7 +137,8 @@ header h1{
     @include btn-menu;
     @media screen and (max-width: 1024px){
         margin-bottom: 4rem;
-        width: 40rem;  
+        width: 40rem;
+        height: 20rem;  
         margin-left: auto; 
         margin-right: auto;
     }
@@ -135,7 +163,8 @@ header h1{
     background: #fff5fe;
     @include btn-menu;
     @media screen and (max-width: 1024px){
-        width: 40rem;  
+        width: 40rem;
+        height: 20rem;  
         margin-left: auto; 
         margin-right: auto;
     }
@@ -145,13 +174,14 @@ header h1{
 }
 .btn_chic p{
     @include transform-menu;
+    font-family: 'croissant_oneregular';
 }
 .chic{
     text-decoration: none;
-    font-family: Arial, sans-serif;
-    background: rgb(146,76,249);
-    background: linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
-    background: -moz-linear-gradient(325deg, rgba(146,76,249,1) 30%, rgba(224,136,29,1) 93%);
+    background:-webkit-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:-o-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:-moz-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -165,7 +195,8 @@ header h1{
     @include btn-menu;
     @media screen and (max-width: 1024px){
         margin-bottom: 4rem;
-        width: 40rem;  
+        width: 40rem;
+        height: 20rem;  
         margin-left: auto; 
         margin-right: auto;   
     }
@@ -175,15 +206,17 @@ header h1{
 }
 .btn_delice p{
     @include transform-menu;
+    font-family: 'amitaregular';
 }
 .delice {
     text-decoration: none;
-    background: rgb(27,76,228);
-    background: linear-gradient(90deg, rgba(27,76,228,1) 35%, rgba(8,137,251,1) 54%);
-    background: -moz-linear-gradient(90deg, rgba(27,76,228,1) 35%, rgba(8,137,251,1) 54%);
+    background:-webkit-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:-o-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:-moz-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'robotolight';
+    font-style: italic;
     font-weight: bold;
     }
 .carte_delice{
@@ -195,7 +228,8 @@ header h1{
     background: #fdfffd;
     @include btn-menu;
     @media screen and (max-width: 1024px){
-        width: 40rem;  
+        width: 40rem;
+        height: 20rem;  
         margin-left: auto; 
         margin-right: auto;
     }
@@ -205,15 +239,18 @@ header h1{
 }
 .btn_gout p{
     @include transform-menu;
+    font-family: 'kaushan_scriptregular';
 }
 .gout {
     text-decoration: none;
-    background: rgb(65,150,60);
-    background: linear-gradient(90deg, rgba(65,150,60,1) 23%, rgba(190,255,127,1) 84%);
-    background: -moz-linear-gradient(90deg, rgba(65,150,60,1) 23%, rgba(190,255,127,1) 84%);
+    background:-webkit-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:-o-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:-moz-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic; 
+    font-weight: bold;  
 }
 .carte_gout{
     color: #72bf56;
@@ -372,17 +409,20 @@ img{
 
     @media screen and (max-width: 1024px){
         text-align: center;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         margin-left: 6rem;
         margin-right: 6rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     @media screen and (max-width: 400px) {
         text-align: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }        
 h2, .menu1 p{
@@ -403,10 +443,16 @@ img{
     margin-top: 7rem;
 
     @media screen and (max-width: 1024px){
-        width: 10rem;
+        width: 15rem;
+        height: 1rem;
     }
-    @media screen and (max-width: 400px){
-        width: 5rem;
+    @media screen and (max-width: 550px){
+        width: 8rem;
+        height: 1rem;
+    }
+    @media screen and (max-width: 350px){
+        width: 2rem;
+        height: 0.5rem;
     }
 }
 .element_decor, h3 {
@@ -436,6 +482,10 @@ h2{
     padding-bottom: 3rem;
     font-size: 3rem;
     font-weight: bold;
+    @media screen and (max-width: 1024px){
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
 }
 .prelude, .point, .mouvement{
     display: inline-block;
@@ -448,37 +498,39 @@ h2{
     padding-top: 4rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
-    @media screen and (max-width: 320px){
-        font-size: 0.7rem;
+    @media screen and (max-width: 350px){
+        font-size: 0.9rem;
+        margin-right: 0.1rem;
     }
 }
 .prix{
     text-align: right;
     margin-left: 3rem;
     @media screen and (max-width: 1024px){
-        margin-left: 1rem;
+        margin-left: 2rem;
+        font-family: 'titilliumitalic';
+        font-weight: bold;
     }
     @media screen and (max-width: 550px){
         margin-left: 0.5rem;
     }
     @media screen and (max-width: 320px){
-        margin-left: 0.2rem;
-        margin-right: 0.2rem;
-        font-size: 0.5rem;
+        margin-left: 0.1rem;
+        font-size: 1rem;
     }
 }
 .plat{
     margin-right: 10rem;
     text-align: left;
     @media screen and (max-width: 1024px){
-        margin-right: 2rem;
-    }
-    @media screen and (max-width: 320px){
-        margin-left: 0.2rem;
+        margin-right: 1rem;
+        font-family: 'titilliumitalic';
     }
 }
 .footer{
@@ -511,21 +563,26 @@ h2{
         text-align: center;
         padding-left: 4rem;
         padding-right: 4rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @media screen and (max-width: 600px) {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
     }
     @media screen and (max-width: 400px) {
-        text-align: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 .titre_chic{
-    background: rgb(146,76,249);
-    background: linear-gradient(325deg, rgba(146,76,249,1) 20%, rgba(224,136,29,1) 93%);
-    background: -moz-linear-gradient(325deg, rgba(146,76,249,1) 20%, rgba(224,136,29,1) 93%);
+    background:-webkit-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:-o-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:-moz-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
+    background:linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -550,10 +607,18 @@ h2{
     margin-right: 20rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
         margin-right: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media screen and (max-width: 350px){
+        font-size: 1rem;
+        margin: 0;
     }
 }
 .prix_appetit{
@@ -564,12 +629,18 @@ h2{
     color: #c67412;
     
     @media screen and (max-width: 1024px){
-        margin-left: 1rem;
+        margin-left: 2rem;
+        font-family: 'titilliumitalic';
+        font-weight: bold;
         font-size: 1.2rem;
     }
     @media screen and (max-width: 550px){
-        margin-left: 0.5rem;
-        font-size: 0.8rem;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 320px){
+        margin-left: 2rem;
+        font-size: 1rem;
     }
 }
 .titre_papilles{
@@ -593,14 +664,19 @@ h2{
     color: #a56799;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
         margin-right: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 0.1rem;
-        font-size: 0.5rem;
+    @media screen and (max-width: 350px){
+        font-size: 0.9rem;
+        margin-right: 0.1rem;
+        
     }
 }
 .prix_papilles{
@@ -611,16 +687,18 @@ h2{
     color: #a56799;
    
     @media screen and (max-width: 1024px){
-        margin-left: 1rem;
+        margin-left: 2rem;
+        font-family: 'titilliumitalic';
+        font-weight: bold;
         font-size: 1.2rem;
     }
     @media screen and (max-width: 550px){
-        margin-left: 0.5rem;
-        font-size: 0.8rem;
+        margin-left: 0.1rem;
+        font-size: 1.2rem;
     }
     @media screen and (max-width: 320px){
-        margin-right: 0.1rem;
-        font-size: 0.5rem;
+        margin-left: 0.1rem;
+        font-size: 1rem;
     }
 }
 .titre_sucrée{
@@ -644,10 +722,16 @@ h2{
     color: #6e4ccc;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
         margin-right: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 350px){
+        font-size: 1.2rem;
+        margin: 0;
     }
 }
 .titre_appetit:hover, .titre_papilles:hover, .titre_sucrée:hover{
@@ -679,13 +763,19 @@ h2{
         padding-right: 4rem;
         margin-left: 6rem;
         margin-right: 6rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    @media screen and (max-width: 400px) {
-        text-align: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 .plat_terminer{
@@ -697,10 +787,17 @@ h2{
     margin-right: 34rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
         margin-right: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 350px){
+        font-size: 1rem;
+        margin-right: 1rem;
+        margin-left: 0.1rem;
     }
 }
 .plat_commencer{
@@ -712,14 +809,21 @@ h2{
     margin-right: 3rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
-        margin-right: 2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 0.1rem;
-        font-size: 0.7rem;
+    @media screen and (max-width: 350px){
+        font-size: 0.9rem;
+        margin-right: 0.1rem;
+    }
+}
+.plat_continuer{
+    @media screen and (max-width: 350px){
+        font-size: 1rem;
+        margin: 0;
     }
 }
 
@@ -747,13 +851,19 @@ h2{
         padding-right: 4rem;
         margin-left: 6rem;
         margin-right: 6rem;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    @media screen and (max-width: 400px) {
-        text-align: center;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    @media screen and (max-width: 600px) {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 }
 .plat_esquisse{
@@ -765,14 +875,16 @@ h2{
     margin-right: 12rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
-        margin-right: 2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
+        margin-right: 8rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 0.1rem;
-        font-size: 0.7rem;
+    @media screen and (max-width: 350px){
+        font-size: 1rem;
+        margin: 0;
     }
 }
 .plat_maître{
@@ -784,15 +896,15 @@ h2{
     margin-right: 2rem;
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
-        margin-right: 2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
-        margin-right: 0.5rem;
+        font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 0.1rem;
-        font-size: 0.7rem;
+    @media screen and (max-width: 350px){
+        font-size: 0.9rem;
+        margin-right: 0.1rem;
     }
 }
 .plat_art{
@@ -805,24 +917,38 @@ h2{
 
     @media screen and (max-width: 1024px){
         font-size: 1.2rem;
-        margin-right: 2rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 0.8rem;
-        margin-right: 0.5rem;
+        font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        font-size: 0.7rem;
-        margin-right: 0.2rem;
+    @media screen and (max-width: 350px){
+        font-size: 0.9rem;
+        margin-right: 0.1rem;
     }
 }
 .menu4 h2{
-    color: #34C924;
+    background:-webkit-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:-o-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:-moz-linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    background:linear-gradient(151deg, rgb(65, 150, 60) 41%, rgb(190, 255, 127) 78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic; 
+    font-weight: bold;  
 }
 .menu4 h3, .menu3 h3{
     color: black;
     font-style: italic;
 }
 .menu3 h2{
-    color: #0770e0;
+    background:-webkit-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:-o-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:-moz-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    background:linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-weight: bold;
 }
