@@ -455,7 +455,7 @@ img{
         height: 0.5rem;
     }
 }
-.element_decor, h3 {
+.element_decor, h3{
         display: flex;
         justify-content: space-between; 
 }
@@ -505,7 +505,7 @@ h2{
         font-size: 1rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-right: 0.1rem;
     }
 }
@@ -579,6 +579,8 @@ h2{
     }
 }
 .titre_chic{
+    text-align: center;
+    font-size: 2rem;
     background:-webkit-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
     background:-o-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
     background:-moz-linear-gradient(156deg, rgb(224, 136, 29) 26%, rgb(146, 76, 249) 78%);
@@ -829,7 +831,7 @@ h2{
 
 // page menu 4
 
-.menu4{
+.menu4 {
     text-align: center;
     background-color:  #fdfffd;
     margin-right: 10rem;

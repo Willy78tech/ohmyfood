@@ -632,7 +632,7 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat, .prix {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-right: 0.1rem;
   }
 }
@@ -722,6 +722,8 @@ h2 {
 }
 
 .titre_chic {
+  text-align: center;
+  font-size: 2rem;
   background: -webkit-linear-gradient(156deg, #e0881d 26%, #924cf9 78%);
   background: -o-linear-gradient(156deg, #e0881d 26%, #924cf9 78%);
   background: -moz-linear-gradient(156deg, #e0881d 26%, #924cf9 78%);
