@@ -411,13 +411,17 @@ img{
         text-align: center;
         padding-left: 2rem;
         padding-right: 2rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         padding-top: 2rem;
         margin-top: 1rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 650px){
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    @media screen and (max-width: 350px) {
         text-align: center;
         padding-left: 0.2rem;
         padding-right: 0.2rem;
@@ -497,15 +501,15 @@ h2{
     font-size: 2rem;
     padding-top: 4rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
-        padding-top: 2rem;
+        padding-top: 1.2rem;
     }
     @media screen and (max-width: 550px){
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-right: 0.1rem;
     }
 }
@@ -520,9 +524,10 @@ h2{
     @media screen and (max-width: 550px){
         margin-left: 0.5rem;
     }
-    @media screen and (max-width: 320px){
+    @media screen and (max-width: 350px){
         margin-left: 0.1rem;
-        font-size: 1rem;
+        line-height: 6rem;
+        
     }
 }
 .plat{
@@ -531,6 +536,10 @@ h2{
     @media screen and (max-width: 1024px){
         margin-right: 1rem;
         font-family: 'titilliumitalic';
+    }
+    @media screen and (max-width: 350px){
+        width: 85%;
+        line-height: 3rem;    
     }
 }
 .footer{
@@ -569,13 +578,14 @@ h2{
         margin-top: 1rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    @media screen and (max-width: 600px) {
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
+    @media screen and (max-width: 650px){
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
     @media screen and (max-width: 400px) {
         margin-left: 0rem;
         margin-right: 0rem;
+        padding: 0;
     }
 }
 .titre_chic{
@@ -608,7 +618,7 @@ h2{
     color: #c67412;
     margin-right: 20rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
         margin-right: 2rem;
@@ -619,8 +629,8 @@ h2{
         padding-right: 2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 1rem;
-        margin: 0;
+        font-size: 1.2rem;
+        padding: 0;
     }
 }
 .prix_appetit{
@@ -634,15 +644,14 @@ h2{
         margin-left: 2rem;
         font-family: 'titilliumitalic';
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 550px){
         margin-left: 2rem;
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 2rem;
-        font-size: 1rem;
+    @media screen and (max-width: 350px){
+        font-size: 1.2rem;
     }
 }
 .titre_papilles{
@@ -665,20 +674,19 @@ h2{
     margin-right: 4rem;
     color: #a56799;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
         margin-right: 2rem;
     }
     @media screen and (max-width: 550px){
         font-size: 1.2rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 0.9rem;
-        margin-right: 0.1rem;
-        
+        font-size: 1.2rem;
+        padding: 0;
+        width: 80%;
+        line-height: 5rem;
     }
 }
 .prix_papilles{
@@ -692,15 +700,16 @@ h2{
         margin-left: 2rem;
         font-family: 'titilliumitalic';
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     @media screen and (max-width: 550px){
         margin-left: 0.1rem;
         font-size: 1.2rem;
     }
-    @media screen and (max-width: 320px){
-        margin-left: 0.1rem;
-        font-size: 1rem;
+    @media screen and (max-width: 350px){
+        font-size: 1.2rem;
+        margin: 0;
+        line-height: 10rem;
     }
 }
 .titre_sucrée{
@@ -723,7 +732,7 @@ h2{
     margin-right: 22rem;
     color: #6e4ccc;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
         margin-right: 2rem;
@@ -733,7 +742,6 @@ h2{
     }
     @media screen and (max-width: 350px){
         font-size: 1.2rem;
-        margin: 0;
     }
 }
 .titre_appetit:hover, .titre_papilles:hover, .titre_sucrée:hover{
@@ -769,15 +777,14 @@ h2{
         margin-top: 1rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    @media screen and (max-width: 600px) {
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    @media screen and (max-width: 650px){
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
     @media screen and (max-width: 400px) {
         margin-left: 0rem;
         margin-right: 0rem;
+        padding: 0;
     }
 }
 .plat_terminer{
@@ -788,7 +795,7 @@ h2{
     text-align: left;
     margin-right: 34rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
         margin-right: 2rem;
@@ -797,9 +804,10 @@ h2{
         font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-right: 1rem;
         margin-left: 0.1rem;
+        line-height: 6rem;
     }
 }
 .plat_commencer{
@@ -810,21 +818,21 @@ h2{
     text-align: left;
     margin-right: 3rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
     }
-    @media screen and (max-width: 550px){
+    @media screen and (max-width: 600px){
         font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 0.9rem;
-        margin-right: 0.1rem;
+        font-size: 1.2rem;
+        width: 80%;
     }
 }
 .plat_continuer{
     @media screen and (max-width: 350px){
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
     }
 }
@@ -866,6 +874,7 @@ h2{
     @media screen and (max-width: 400px) {
         margin-left: 0rem;
         margin-right: 0rem;
+        padding: 0;
     }
 }
 .plat_esquisse{
@@ -876,7 +885,7 @@ h2{
     text-align: left;
     margin-right: 12rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
         margin-right: 8rem;
@@ -885,8 +894,10 @@ h2{
         font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 0;
+        width: 85%;
+        line-height: 4rem;
     }
 }
 .plat_maître{
@@ -897,7 +908,7 @@ h2{
     text-align: left;
     margin-right: 2rem;
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
     }
@@ -905,8 +916,10 @@ h2{
         font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 0.9rem;
-        margin-right: 0.1rem;
+        font-size: 1.2rem;
+        margin: 0;
+        width: 85%;
+        line-height: 3rem;
     }
 }
 .plat_art{
@@ -918,7 +931,7 @@ h2{
     margin-right: 4rem;
 
     @media screen and (max-width: 1024px){
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-family: 'titilliumitalic';
         padding-top: 2rem;
     }
@@ -926,8 +939,10 @@ h2{
         font-size: 1.2rem;
     }
     @media screen and (max-width: 350px){
-        font-size: 0.9rem;
-        margin-right: 0.1rem;
+        font-size: 1.2rem;
+        margin: 0;
+        width: 85%;
+        line-height: 3rem;
     }
 }
 .menu4 h2{
@@ -944,7 +959,7 @@ h2{
     color: black;
     font-style: italic;
 }
-.menu3 h2{
+.menu3 h2 {
     background:-webkit-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
     background:-o-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);
     background:-moz-linear-gradient(156deg, rgb(27, 76, 228) 48%, rgb(8, 137, 251) 61%);

@@ -513,14 +513,20 @@ img {
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 2rem;
     margin-top: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
+  .menu1 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
   .menu1 {
     text-align: center;
     padding-left: 0.2rem;
@@ -620,19 +626,19 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat, .prix {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
-    padding-top: 2rem;
+    padding-top: 1.2rem;
   }
 }
 @media screen and (max-width: 550px) {
   .plat, .prix {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 350px) {
   .plat, .prix {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 0.1rem;
   }
 }
@@ -653,10 +659,10 @@ h2 {
     margin-left: 0.5rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .prix {
     margin-left: 0.1rem;
-    font-size: 1rem;
+    line-height: 6rem;
   }
 }
 
@@ -668,6 +674,12 @@ h2 {
   .plat {
     margin-right: 1rem;
     font-family: "titilliumitalic";
+  }
+}
+@media screen and (max-width: 350px) {
+  .plat {
+    width: 85%;
+    line-height: 3rem;
   }
 }
 
@@ -708,16 +720,17 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .menu2 {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .menu2 {
     margin-left: 0rem;
     margin-right: 0rem;
+    padding: 0;
   }
 }
 
@@ -755,7 +768,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_appetit {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
     margin-right: 2rem;
@@ -770,8 +783,8 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat_appetit {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.2rem;
+    padding: 0;
   }
 }
 
@@ -787,7 +800,7 @@ h2 {
     margin-left: 2rem;
     font-family: "titilliumitalic";
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 550px) {
@@ -796,10 +809,9 @@ h2 {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .prix_appetit {
-    margin-left: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -826,7 +838,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_papilles {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
     margin-right: 2rem;
@@ -835,14 +847,14 @@ h2 {
 @media screen and (max-width: 550px) {
   .plat_papilles {
     font-size: 1.2rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
   }
 }
 @media screen and (max-width: 350px) {
   .plat_papilles {
-    font-size: 0.9rem;
-    margin-right: 0.1rem;
+    font-size: 1.2rem;
+    padding: 0;
+    width: 80%;
+    line-height: 5rem;
   }
 }
 
@@ -858,7 +870,7 @@ h2 {
     margin-left: 2rem;
     font-family: "titilliumitalic";
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 550px) {
@@ -867,10 +879,11 @@ h2 {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .prix_papilles {
-    margin-left: 0.1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 10rem;
   }
 }
 
@@ -897,7 +910,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_sucrée {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
     margin-right: 2rem;
@@ -911,7 +924,6 @@ h2 {
 @media screen and (max-width: 350px) {
   .plat_sucrée {
     font-size: 1.2rem;
-    margin: 0;
   }
 }
 
@@ -947,18 +959,17 @@ h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .menu3 {
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .menu3 {
     margin-left: 0rem;
     margin-right: 0rem;
+    padding: 0;
   }
 }
 
@@ -972,7 +983,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_terminer {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
     margin-right: 2rem;
@@ -985,9 +996,10 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat_terminer {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 1rem;
     margin-left: 0.1rem;
+    line-height: 6rem;
   }
 }
 
@@ -1001,26 +1013,26 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_commencer {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .plat_commencer {
     font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 350px) {
   .plat_commencer {
-    font-size: 0.9rem;
-    margin-right: 0.1rem;
+    font-size: 1.2rem;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 350px) {
   .plat_continuer {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
   }
 }
@@ -1065,6 +1077,7 @@ h2 {
   .menu4 {
     margin-left: 0rem;
     margin-right: 0rem;
+    padding: 0;
   }
 }
 
@@ -1078,7 +1091,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_esquisse {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
     margin-right: 8rem;
@@ -1091,8 +1104,10 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat_esquisse {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
+    width: 85%;
+    line-height: 4rem;
   }
 }
 
@@ -1106,7 +1121,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_maître {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
   }
@@ -1118,8 +1133,10 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat_maître {
-    font-size: 0.9rem;
-    margin-right: 0.1rem;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 85%;
+    line-height: 3rem;
   }
 }
 
@@ -1133,7 +1150,7 @@ h2 {
 }
 @media screen and (max-width: 1024px) {
   .plat_art {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-family: "titilliumitalic";
     padding-top: 2rem;
   }
@@ -1145,8 +1162,10 @@ h2 {
 }
 @media screen and (max-width: 350px) {
   .plat_art {
-    font-size: 0.9rem;
-    margin-right: 0.1rem;
+    font-size: 1.2rem;
+    margin: 0;
+    width: 85%;
+    line-height: 3rem;
   }
 }
 
