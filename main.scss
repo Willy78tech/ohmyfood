@@ -831,9 +831,27 @@ h2{
     }
 }
 .plat_continuer{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: left;
+    margin-right: 3rem;
+    @media screen and (max-width: 1024px){
+        font-size: 1.6rem;
+        font-family: 'titilliumitalic';
+        padding-top: 2rem;
+    }
+    @media screen and (max-width: 600px){
+        font-size: 1.2rem;
+    }
     @media screen and (max-width: 350px){
         font-size: 1.2rem;
-        margin: 0;
+        width: 80%;
+        line-height: 6rem;
+    }
+    @media screen and (max-width: 300px){
+        line-height: 4rem;
     }
 }
 
@@ -897,7 +915,35 @@ h2{
         font-size: 1.2rem;
         margin: 0;
         width: 85%;
+        line-height: 5rem;
+    }
+    @media screen and (max-width: 300px){
         line-height: 4rem;
+    }
+}
+.prix_esquisse{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    @media screen and (max-width: 1024px){
+        margin-left: 2rem;
+        font-family: 'titilliumitalic';
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 550px){
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 350px){
+        margin-left: 0.1rem;
+        line-height: 5rem;
+        font-size: 1.2rem;
+        
+    }
+    @media screen and (max-width: 300px){
+        line-height: 6.5rem;
     }
 }
 .plat_maître{
@@ -942,7 +988,32 @@ h2{
         font-size: 1.2rem;
         margin: 0;
         width: 85%;
-        line-height: 3rem;
+        line-height: 5rem;
+    }
+    @media screen and (max-width: 300px){
+        line-height: 3.5rem;
+    }
+}
+.prix_art{
+    display: inline-block;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding-top: 4rem;
+    @media screen and (max-width: 1024px){
+        margin-left: 2rem;
+        font-family: 'titilliumitalic';
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 550px){
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 350px){
+        margin-left: 0.1rem;
+        line-height: 7rem;
+        font-size: 1.2rem;
+        
     }
 }
 .menu4 h2{
