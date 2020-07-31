@@ -582,9 +582,8 @@ img {
 
 h3, h4, h5 {
   margin-top: 6rem;
-  position: relative;
   cursor: pointer;
-  background: linear-gradient(to top, #B71C1C 0%, #B71C1C 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #B71C1C 0%, #B71C1C 10%, transparent 10.01%) no-repeat;
   transition: background-size 2s;
   background-size: 0% 100%;
 }
