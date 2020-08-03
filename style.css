@@ -422,7 +422,7 @@ header h1 {
     transform: scale(1);
   }
 }
-footer {
+.pied_de_page {
   display: flex;
   justify-content: space-between;
   text-align: justify;
@@ -434,7 +434,7 @@ footer {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 400px) {
-  footer {
+  .pied_de_page {
     width: 100%;
   }
 }
@@ -547,7 +547,7 @@ h3 {
   color: #3d1319;
 }
 
-.menu1 p, .footer {
+.menu1 p, footer {
   font-weight: bold;
 }
 
@@ -682,13 +682,10 @@ h2 {
   }
 }
 
-.footer {
+footer .fas {
+  margin-right: 2rem;
   margin-bottom: 10rem;
   margin-top: 6rem;
-}
-
-.footer .fas {
-  margin-right: 2rem;
 }
 
 .menu2 {

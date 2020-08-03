@@ -327,7 +327,7 @@ header h1{
       transform: scale(1.0);
     }
   }
-footer{
+.pied_de_page{
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -438,7 +438,7 @@ h3{
     font-size: 2rem;
     color: #3d1319;
 }
-.menu1 p, .footer{
+.menu1 p, footer{
     font-weight: bold;
 }
 img{
@@ -541,12 +541,10 @@ h2{
         line-height: 3rem;    
     }
 }
-.footer{
+footer .fas{
+    margin-right: 2rem;
     margin-bottom: 10rem;
     margin-top: 6rem;
-}
-.footer .fas{
-    margin-right: 2rem;
 }
 
 // Page menu 2
